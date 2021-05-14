@@ -71,4 +71,6 @@ RUN pip install pip -U \
         Cython \
         fire
 
+ENV PATH "/usr/local/src/jdftx-1.6.0/jdftx/scripts:$PATH"
+
 WORKDIR /root
