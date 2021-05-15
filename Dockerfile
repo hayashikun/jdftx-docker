@@ -13,6 +13,7 @@ RUN apt update \
         curl \
         unzip \
         gnuplot \
+        octave \
         libgsl0-dev \
         libopenmpi-dev \
         openmpi-bin \
@@ -72,5 +73,7 @@ RUN pip install pip -U \
         fire
 
 ENV PATH "/usr/local/src/jdftx-1.6.0/jdftx/scripts:$PATH"
+ENV OMPI_ALLOW_RUN_AS_ROOT 1
+ENV OMPI_ALLOW_RUN_AS_ROOT_CONFIRM 1
 
 WORKDIR /root
