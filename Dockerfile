@@ -76,4 +76,7 @@ ENV PATH "/usr/local/src/jdftx-1.6.0/jdftx/scripts:$PATH"
 ENV OMPI_ALLOW_RUN_AS_ROOT 1
 ENV OMPI_ALLOW_RUN_AS_ROOT_CONFIRM 1
 
+COPY ./pslibrary.1.0.0/pbe /usr/local/src/build/pseudopotentials/pbe
+COPY ./pslibrary.1.0.0/rel-pbe /usr/local/src/build/pseudopotentials/rel-pbe
+
 WORKDIR /root
