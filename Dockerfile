@@ -78,5 +78,8 @@ ENV OMPI_ALLOW_RUN_AS_ROOT_CONFIRM 1
 
 COPY ./pslibrary.1.0.0/pbe /usr/local/src/build/pseudopotentials/pbe
 COPY ./pslibrary.1.0.0/rel-pbe /usr/local/src/build/pseudopotentials/rel-pbe
+COPY ./pslibrary.1.0.0/pbesol /usr/local/src/build/pseudopotentials/pbesol
+COPY ./pslibrary.1.0.0/rel-pbesol /usr/local/src/build/pseudopotentials/rel-pbesol
+
 
 WORKDIR /root
